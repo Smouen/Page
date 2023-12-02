@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Project 1</title>
+</head>
+<body>
+<header>
+    <div id="logo" onclick="slowScroll('#main')">
+        <span>IT-Shock</span>
+    </div>
+    <div id="about">
+        <a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a> 
+        <a href="#" onclick="slowScroll('#overiew')" title="Примущества">Примущества</a> 
+        <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a> 
+        <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+    </div>
+</header>
+
+<div id="top"> <!-- Главный текст -->
+<h1>IT-курси</h1>
+<h3>Мы ждем именно вас!</h3>
+
+</div>
+<div id="main">
+<div class="intro">
+    <h2>Для чего нужны ІТ-курсы?</h2>
+    <span>Айти-курсы дают возможность получить необходимые знания и навыки для работы в IT-сфере. Они могут стать отличным стартом для вашей карьеры в сфере информационных технологий.</span>
+</div>
+<div class="text">
+    <span>Вы можете освоить новую профессию или повысить свою квалификацию, не выходя из дома.</span>
+</div>
+</div>
+<div id="overviem">
+    <h2>Языки програмированния которые мы изучаем</h2>
+    <h4>C#,JavaScript,Java,C++,Python так же техногии Node.js,jquery,Apiviem</h4>
+
+
+
+    
+</div>
+</div>
+
+</div>
+
+<footer>
+      
+
+
+
+</div>
+    </div>
+</div>
+</footer>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+    function slowScroll(id) {
+     $('html','body').animate({
+    scrollTop: $(id).offset().top
+    }, 500);
+    }
+
+ $(document).on("scroll", function () { /* Отслеживания функции скролла */
+    if($(window).scrollTop() === 0) 
+    $("header").removeClass("fixed");
+    else
+    $("header").attr("class", "fixed");
+ });
+
+
+ </script>
+</body>
+</html>
